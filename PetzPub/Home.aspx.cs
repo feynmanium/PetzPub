@@ -7,14 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace PetzPub
 {
-    public partial class Registration : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void RegisterUser(object sender, EventArgs e)
         {
 
         }
