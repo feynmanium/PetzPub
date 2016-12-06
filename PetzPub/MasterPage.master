@@ -11,7 +11,7 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body class="bg-primary">
     <form id="form1" runat="server">
     <div>
         <nav class="navbar">
@@ -34,6 +34,10 @@
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+        <footer class="panel-footer">
+            <a href="Contact.aspx">Contact Us</a>
+            <p>1-800-888-8888</p>
+        </footer>
     </div>
     </form>
 </body>

@@ -36,5 +36,5 @@
         <asp:Image ID="ImageOutput" runat="server" />
         <br />
         <asp:Button ID="Button1" runat="server" Text="Add Product" OnClick="Button1_Click" />
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1 %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
 </asp:Content>
