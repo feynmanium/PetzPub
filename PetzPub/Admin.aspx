@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <asp:Label ID="Label1" class="control-label" runat="server" Text="Add a product:"></asp:Label>
+        <h2>Add a product:</h2>
         <br />
         <asp:Label ID="Label2" class="control-label" runat="server" Text="Product Name: "></asp:Label>
         <asp:TextBox ID="TextBoxProductName" runat="server"></asp:TextBox>
@@ -32,7 +32,7 @@
         <br />
         <asp:Label ID="Label7" runat="server" Text="Image URL: "></asp:Label>
         <asp:FileUpload ID="FileUpload1" runat="server" />
-        <asp:Image ID="ImageOutput" runat="server" Height="100px" Width="100px" />
+        <asp:Image ID="ImageOutput" runat="server" Height="150px" Width="100px" />
         <asp:Label ID="LabelOutput" runat="server" Text=""></asp:Label>
         <br />
         <asp:Button ID="Button1" runat="server" Text="Add Product" OnClick="Button1_Click" />
