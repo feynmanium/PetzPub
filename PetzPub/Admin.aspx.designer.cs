@@ -130,15 +130,6 @@ namespace PetzPub {
         protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
         
         /// <summary>
-        /// LabelOutput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelOutput;
-        
-        /// <summary>
         /// ImageOutput control.
         /// </summary>
         /// <remarks>
@@ -146,6 +137,15 @@ namespace PetzPub {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image ImageOutput;
+        
+        /// <summary>
+        /// LabelOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelOutput;
         
         /// <summary>
         /// Button1 control.

@@ -32,9 +32,9 @@
         <br />
         <asp:Label ID="Label7" runat="server" Text="Image URL: "></asp:Label>
         <asp:FileUpload ID="FileUpload1" runat="server" />
+        <asp:Image ID="ImageOutput" runat="server" Height="100px" Width="100px" />
         <asp:Label ID="LabelOutput" runat="server" Text=""></asp:Label>
-        <asp:Image ID="ImageOutput" runat="server" />
         <br />
         <asp:Button ID="Button1" runat="server" Text="Add Product" OnClick="Button1_Click" />
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString1 %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
 </asp:Content>

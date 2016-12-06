@@ -50,8 +50,9 @@ namespace PetzPub
                         ImageOutput.ImageUrl = "~/Images/" + FileUpload1.FileName;
                         productImageUrl = "~/Images/" + FileUpload1.FileName;
 
-                        SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database1.mdf;Integrated Security=True;Connect Timeout=30");
+                        SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True");
                         SqlCommand cmd = new SqlCommand("INSERT INTO Products(product_name, price, description, animal, category, imageUrl) VALUES ('" + productName + "', " + productPrice + ", '" + productDescription + "', '" + productAnimal + "', '" + productCategory + "', '" + productImageUrl + "')");
+                        cmd.Connection = connection;
                         connection.Open();
                         cmd.ExecuteNonQuery();
                         connection.Close();
