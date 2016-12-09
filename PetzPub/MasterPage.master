@@ -20,10 +20,11 @@
                     <a class="navbar-brand" href="Home.aspx">PetzPub</a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Dog</a></li>
-                    <li><a href="#">Cat</a></li>
-                    <li><a href="#">Bird</a></li>
-                    <li><a href="#">Small Animal</a></li>
+                    <li><asp:LinkButton ID="LinkButton1" OnClick="viewCategoryDog" runat="server">Dog</asp:LinkButton></li>
+                    <li><asp:LinkButton ID="LinkButton2" OnClick="viewCategoryCat" runat="server">Cat</asp:LinkButton></li>
+                    <li><asp:LinkButton ID="LinkButton3" OnClick="viewCategoryBird" runat="server">Bird</asp:LinkButton></li>
+                    <li><asp:LinkButton ID="LinkButton4" OnClick="viewCategorySmallAnimal" runat="server">Small Animal</asp:LinkButton></li>
+                    <li><asp:LinkButton ID="LinkButton5" OnClick="viewAll" runat="server">All Products</asp:LinkButton></li>
                     <li><a href="#">About</a></li>
                     <li><a href="Contact.aspx">Contact</a></li>
                 </ul>

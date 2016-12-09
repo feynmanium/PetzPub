@@ -6,12 +6,15 @@
         <br />
         <asp:Label ID="Label2" class="control-label" runat="server" Text="Product Name: "></asp:Label>
         <asp:TextBox ID="TextBoxProductName" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Required Field" ControlToValidate="TextBoxProductName"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label3" class="control-label" runat="server" Text="Price: $"></asp:Label>
-        <asp:TextBox ID="TextBoxPrice" runat="server" TextMode="Number"></asp:TextBox>
+        <asp:TextBox ID="TextBoxPrice" runat="server" TextMode="Number" step=".01"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Required Field" ControlToValidate="TextBoxPrice"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label4" runat="server" Text="Product Description: "></asp:Label>
         <asp:TextBox ID="TextBoxDescription" runat="server" TextMode="MultiLine"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Required Field" ControlToValidate="TextBoxDescription"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label5" runat="server" Text="Animal: "></asp:Label>
         <asp:DropDownList ID="DropDownListAnimal" runat="server">
