@@ -9,8 +9,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <%this is the client side code for the design and display%>
 <asp:Panel ID="Panel1" runat="server" DefaultButton="btnSubmit">
+ <asp:Panel ID="Panel2" runat="server" DefaultButton="btnSubmit">
     <p>
         Please Fill the Following to Send Mail.</p>
     <p>
