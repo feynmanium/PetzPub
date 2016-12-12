@@ -69,5 +69,10 @@ namespace PetzPub
 
             }
         }
+
+        protected void RemoveProduct(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

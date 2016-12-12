@@ -15,31 +15,49 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <nav class="navbar">
+        <div class="jumbotron">
+            <div class="container text-center">
+                <h1>PetzPub</h1>      
+                <p>Delivering Pet Supplies to Your Home</p>
+            </div>
+        </div>
+        <asp:Label CssClass="text-right" ID="LabelUser" runat="server" Text=""></asp:Label>
+        <nav class="navbar navbar-inverse">
             <div class="container-fluid">
-                
-                <div class="navbar-header">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                      </button>
                     <a class="navbar-brand" href="Home.aspx">PetzPub</a>
+
+                    </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><asp:LinkButton ID="LinkButton1" OnClick="viewCategoryDog" runat="server">Dog</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton2" OnClick="viewCategoryCat" runat="server">Cat</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton3" OnClick="viewCategoryBird" runat="server">Bird</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton4" OnClick="viewCategorySmallAnimal" runat="server">Small Animal</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton5" OnClick="viewAll" runat="server">All Products</asp:LinkButton></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="Contact.aspx">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="login" href="Login.aspx" runat="server">Login</a></li>
+                        <li><a id="register" href="Registration.aspx" runat="server">Register</a></li>
+                    </ul>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li><asp:LinkButton ID="LinkButton1" OnClick="viewCategoryDog" runat="server">Dog</asp:LinkButton></li>
-                    <li><asp:LinkButton ID="LinkButton2" OnClick="viewCategoryCat" runat="server">Cat</asp:LinkButton></li>
-                    <li><asp:LinkButton ID="LinkButton3" OnClick="viewCategoryBird" runat="server">Bird</asp:LinkButton></li>
-                    <li><asp:LinkButton ID="LinkButton4" OnClick="viewCategorySmallAnimal" runat="server">Small Animal</asp:LinkButton></li>
-                    <li><asp:LinkButton ID="LinkButton5" OnClick="viewAll" runat="server">All Products</asp:LinkButton></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="Contact.aspx">Contact</a></li>
-                </ul>
             </div>
         </nav>
-        <br />
+        <br />        
         <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
             <CurrentNodeStyle ForeColor="#333333" />
             <NodeStyle Font-Bold="True" ForeColor="#284E98" />
             <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />
             <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />
         </asp:SiteMapPath>
-        <br />
         
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
