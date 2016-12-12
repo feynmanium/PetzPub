@@ -3,6 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-<asp:Login ID = "Login1" runat = "server" OnAuthenticate= "ValidateUser"></asp:Login>
+<asp:Login ID="Login1" runat="server" OnAuthenticate= "ValidateUser"></asp:Login>
 
 </asp:Content>
