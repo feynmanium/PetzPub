@@ -17,6 +17,7 @@
     <div>
         <nav class="navbar">
             <div class="container-fluid">
+                
                 <div class="navbar-header">
                     <a class="navbar-brand" href="Home.aspx">PetzPub</a>
                 </div>
@@ -31,7 +32,14 @@
                 </ul>
             </div>
         </nav>
-        
+        <br />
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+            <CurrentNodeStyle ForeColor="#333333" />
+            <NodeStyle Font-Bold="True" ForeColor="#284E98" />
+            <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />
+            <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />
+        </asp:SiteMapPath>
+        <br />
         
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
