@@ -95,7 +95,7 @@ namespace PetzPub
                     image.Height = 150;
                     cellImage.Controls.Add(image);
 
-                    cellLink.Text = "<a href='Product.aspx/?id=" + reader["id"] +"'>View</a>";
+                    cellLink.Text = "<a href='Product.aspx?id=" + reader["id"] +"'>View</a>";
 
                     row.Cells.Add(cellImage);
                     row.Cells.Add(cellName);

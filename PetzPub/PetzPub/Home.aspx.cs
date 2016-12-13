@@ -28,7 +28,7 @@ namespace PetzPub
                     string url = reader["imageUrl"].ToString();
                     if (url != null)
                         ImageButton1.ImageUrl = url;
-                    ImageButton1.PostBackUrl = "Product.aspx/?id=" + reader["id"];
+                    ImageButton1.PostBackUrl = "Product.aspx?id=" + reader["id"];
                 }
 
                 if (reader.Read())
@@ -36,7 +36,7 @@ namespace PetzPub
                     string url = reader["imageURL"].ToString();
                     if (url != null)
                         ImageButton2.ImageUrl = url;
-                    ImageButton2.PostBackUrl = "Product.aspx/?id=" + reader["id"];
+                    ImageButton2.PostBackUrl = "Product.aspx?id=" + reader["id"];
 
                 }
                 if (reader.Read())
@@ -44,7 +44,7 @@ namespace PetzPub
                     string url = reader["imageURL"].ToString();
                     if (url != null)
                         ImageButton3.ImageUrl = url;
-                    ImageButton3.PostBackUrl = "Product.aspx/?id=" + reader["id"];
+                    ImageButton3.PostBackUrl = "Product.aspx?id=" + reader["id"];
 
                 }
                 if (reader.Read())
@@ -53,7 +53,7 @@ namespace PetzPub
                     string url = reader["imageURL"].ToString();
                     if (url != null)
                         ImageButton4.ImageUrl = url;
-                    ImageButton4.PostBackUrl = "Product.aspx/?id=" + reader["id"];
+                    ImageButton4.PostBackUrl = "Product.aspx?id=" + reader["id"];
 
                 }
                 if (reader.Read())
@@ -61,7 +61,7 @@ namespace PetzPub
                     string url = reader["imageURL"].ToString();
                     if (url != null)
                         ImageButton5.ImageUrl = url;
-                    ImageButton5.PostBackUrl = "Product.aspx/?id=" + reader["id"];
+                    ImageButton5.PostBackUrl = "Product.aspx?id=" + reader["id"];
 
                 }
 
@@ -70,7 +70,7 @@ namespace PetzPub
                     string url = reader["imageURL"].ToString();
                     if (url != null)
                         ImageButton6.ImageUrl = url;
-                    ImageButton6.PostBackUrl = "Product.aspx/?id=" + reader["id"];
+                    ImageButton6.PostBackUrl = "Product.aspx?id=" + reader["id"];
 
                 }
                 if (reader.Read())
@@ -79,7 +79,7 @@ namespace PetzPub
                     string url = reader["imageURL"].ToString();
                     if (url != null)
                         ImageButton7.ImageUrl = url;
-                    ImageButton7.PostBackUrl = "Product.aspx/?id=" + reader["id"];
+                    ImageButton7.PostBackUrl = "Product.aspx?id=" + reader["id"];
 
                 }
                 if (reader.Read())
@@ -88,7 +88,7 @@ namespace PetzPub
                     string url = reader["imageURL"].ToString();
                     if (url != null)
                         ImageButton8.ImageUrl = url;
-                    ImageButton8.PostBackUrl = "Product.aspx/?id=" + reader["id"];
+                    ImageButton8.PostBackUrl = "Product.aspx?id=" + reader["id"];
 
                 }
                 if (reader.Read())
@@ -97,7 +97,7 @@ namespace PetzPub
                     string url = reader["imageURL"].ToString();
                     if (url != null)
                         ImageButton9.ImageUrl = url;
-                    ImageButton9.PostBackUrl = "Product.aspx/?id=" + reader["id"];
+                    ImageButton9.PostBackUrl = "Product.aspx?id=" + reader["id"];
 
                 }
                 connection.Close();
