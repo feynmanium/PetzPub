@@ -43,6 +43,7 @@ namespace PetzPub
                         break;
                     default:
                         FormsAuthentication.RedirectFromLoginPage(Login1.UserName, Login1.RememberMeSet);
+                        Session["User"] = Login1.UserName;
                         break;
                 }
             }

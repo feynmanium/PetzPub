@@ -12,7 +12,21 @@ namespace PetzPub
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["User"] == null) {
+                Response.Write("You do not have access to this page");
+                foreach (Control c in this.Controls)
+                {
+                    c.Visible = false;
+                }
+            }
+            else if (Session["User"].ToString() != "admin")
+            {
+                Response.Write("You do not have access to this page");
+                foreach (Control c in this.Controls)
+                {
+                    if (c is Panel) c.Visible = false;
+                }
+            }
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
