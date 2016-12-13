@@ -6,6 +6,15 @@
     <div>
   <asp:Panel ID="Panel1" runat="server" DefaultButton="btnSubmit"/>
  <asp:Panel ID="Panel2" runat="server" DefaultButton="btnSubmit">
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-lg-8" >  <div class="jumbotron" style="background-color:black"><h1 style="color:white"><b>Contact us! Don't worry we don't bite</b></h1> </div> </div>
+            <div class="col-md-2"></div>
+                
+                
+        </div>
+    </div>
     <p>
         Please Fill the Following to Send Mail.</p>
     <p>

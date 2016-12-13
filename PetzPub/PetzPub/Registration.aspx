@@ -3,12 +3,46 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+             <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-lg-8" >  <div class="jumbotron" style="background-color:black"><h1 style="color:white"><b>Register here:</b></h1> </div> </div>
+            <div class="col-md-2"></div>
+                
+                
+        </div>
+    </div>
+    
     <div>
     <table border="0" cellpadding="0" cellspacing="0">
     <tr>
         <th colspan="3">
             Registration
         </th>
+    </tr>
+            <tr>
+        <td>
+            First Name
+        </td>
+        <td>
+            <asp:TextBox ID="txtFirstName" runat="server" />
+        </td>
+        <td>
+            <asp:RequiredFieldValidator ErrorMessage="Required" ForeColor="Red" ControlToValidate="txtUsername"
+                runat="server" />
+        </td>
+    </tr>
+            <tr>
+        <td>
+            Last Name
+        </td>
+        <td>
+            <asp:TextBox ID="txtLastName" runat="server" />
+        </td>
+        <td>
+            <asp:RequiredFieldValidator ErrorMessage="Required" ForeColor="Red" ControlToValidate="txtUsername"
+                runat="server" />
+        </td>
     </tr>
     <tr>
         <td>

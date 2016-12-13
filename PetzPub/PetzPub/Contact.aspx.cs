@@ -13,7 +13,7 @@ namespace PetzPub
         protected void SendMail()
         {
         
-            var fromAddress = "Gmail@gmail.com";
+            var fromAddress = "jerrywartak@gmail.com";
             var toAddress = YourEmail.Text.ToString();
             const string fromPassword = "Password";
             string subject = YourSubject.Text.ToString();

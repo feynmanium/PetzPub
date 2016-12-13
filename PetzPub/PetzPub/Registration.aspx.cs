@@ -27,12 +27,14 @@ namespace PetzPub
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@FirstName", txtUsername.Text.Trim());
+                        cmd.Parameters.AddWithValue("@LastName", txtUsername.Text.Trim());
                         cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim());
                         cmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
                         cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());
                         cmd.Connection = con;
                         con.Open();
-                        userId = Convert.ToInt32(cmd.ExecuteScalar());
+                       userId = Convert.ToInt32(cmd.ExecuteScalar());
                         con.Close();
                     }
                 }
