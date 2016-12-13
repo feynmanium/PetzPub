@@ -24,7 +24,7 @@ namespace PetzPub
                 Response.Write("You do not have access to this page");
                 foreach (Control c in this.Controls)
                 {
-                    if (c is Panel) c.Visible = false;
+                    c.Visible = false;
                 }
             }
         }
